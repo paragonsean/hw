@@ -1,0 +1,22 @@
+21
+John           Taylor         developer      65000          4.5            7573938284     
+William        Smith          engineer       75000          3.9            7203020381     
+Mary           Baker          engineer       76000          4.1            5838348363     
+Henry          Caves          lawyer         90000          4.9            2838232084     
+John           Billson        clerk          50000          4.3            4873820948     
+Kostas         Olgenson       accountant     53000          3.2            4232432966     
+Mark           Miller         administrator  79000          3.4            4234829124     
+Brock          Johnson        worker         45000          4.1            2393971642     
+Jennifer       Stein          buyer          64000          4.4            3746549091     
+Eric           Moore          buyer          69000          2.9            3847279910     
+Jessica        Dowes          coordinator    80000          3.7            4027651909     
+Eric           Selic          manager        80000          4.1            8470981347     
+Sarah          Bronn          developer      63000          3.5            9382931383     
+Justin         Hawkings       purchasing     69000          3.3            8982987656     
+Scott          Johansson      engineer       65000          3.9            7570987671     
+Michael        Willberg       manager        98000          5              7570901231     
+Terry          Berg           worker         49000          3.1            9098976540     
+Alee           Matz           assistant      60000          2.6            7573230838     
+Jason          Freedman       assistant      65000          3.4            4343243234     
+Alex           Tsi            chief          90000          1.1            7571111111     
+Marylin        Scott          manager        85000          4.1            7578995090     

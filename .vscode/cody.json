@@ -1,0 +1,142 @@
+{
+  "title": "[Experimental] Custom Workspace Commands",
+  "description": "This file showcases how to build custom commandss for Cody by Sourcegraph in VS Code.",
+  "doc": "For more information, see https://sourcegraph.com/notebooks/Tm90ZWJvb2s6MzA1NQ==",
+  "commands": {
+    "(example)-generate-readme.md-for-current-directory": {
+      "description": "(example) Generate README.md for Current Directory",
+      "prompt": "Write a detailed README.md file to document the code in the same directory as my current selection. Summarize what the code in this directory is meant to accomplish. Explain the key files, functions, classes, and features. Use Markdown formatting for headings, code blocks, lists, etc. to make it organized and readable. Aim for a beginner-friendly explanation that gives a developer unfamiliar with the code a good starting point to understand it. Ensure to include: - Overview of directory purpose - Functionality explanations - Relevant diagrams or visuals if helpful. Write the README content clearly and concisely using complete sentences and paragraphs based on the shared context. Use proper spelling, grammar, and punctuation throughout. Surround your full README text with triple backticks so it renders properly as a code block. Do not make assumptions or fabricate additional details.",
+      "context": {
+        "currentDir": true,
+        "selection": true
+      }
+    },
+    "(example)-commit-message-suggestion": {
+      "description": "(example) Commit Message Suggestion",
+      "prompt": "Suggest a informative commit message by summarizing code changes from the shared command output. The commit message should follow the conventional commit format and provide meaningful context for future readers.",
+      "context": {
+        "selection": false,
+        "command": "git diff"
+      }
+    },
+    "compare-tabs": {
+      "description": "Compare files in opened tabs",
+      "prompt": "Examine the shared code snippets from my opened tabs. Then explain the relationship between the code samples by answering these questions: 1. What are the main tasks or functions the code is performing? 2. Are there any similarities in functions or logic across the samples? 3. Does one code snippet call or import another? If so, how do they interact? 4. Are there any notable differences in how they approach similar problems? 5. Overall, how are the code snippets related - do they work together as part of a larger program, solve variants of the same problem, or serve entirely different purposes?",
+      "context": {
+        "openTabs": true,
+        "selection": false
+      }
+    },
+    "current-dir": {
+      "description": "Explain current directory",
+      "prompt": "At a high level, explain what this directory is used for.",
+      "context": {
+        "currentDir": true,
+        "seleection": false
+      }
+    },
+    "readme": {
+      "description": "Readme for current dir",
+      "prompt": "Write a detailed README.md file to document the code located in the same directory as my current selection. Summarize what the code in this directory is meant to accomplish. Explain the key files, functions, classes, and features. Use Markdown formatting for headings, code blocks, lists, etc. to make the it organized and readable. Aim for a beginner-friendly explanation that gives a developer unfamiliar with the code a good starting point to understand it. Make sure to include: - Overview of directory purpose - Functionality explanations - Relevant diagrams or visuals if helpful. Write the README content clearly and concisely using complete sentences and paragraphs based on the shared context. Use proper spelling, grammar, and punctuation throughout. Surround your full README text with triple backticks so it renders properly as a code block. Do not make assumptions or fabricating additional details.",
+      "context": {
+        "currentDir": true,
+        "selection": true
+      }
+    },
+    "recent-git-changes": {
+      "description": "Summarize recent changes",
+      "prompt": "Summarize the given git changes in 3-5 sentences",
+      "context": {
+        "command": "git log -10 --pretty=format:'%h - %an: %s' --stat",
+        "selection": false
+      }
+    },
+    "commit-message": {
+      "description": "Commit message for current changes",
+      "prompt": "Suggest an informative commit message by summarizing code changes from the shared command output. The commit message should follow the conventional commit format and provide meaningful context for future readers.",
+      "context": {
+        "selection": false,
+        "command": "git diff --cached"
+      }
+    },
+    "code-review-summary": {
+      "description": "Summarize the changes in the current code review.",
+      "prompt": "Provide a summary of the changes in the current code review including the number of files changed, lines added/removed, and main functionalities affected.",
+      "context": {
+        "currentDir": true,
+        "command": "git diff --stat"
+      }
+    },
+    "bug-tracker-integration": {
+      "description": "Integrate current changes with the bug tracker.",
+      "prompt": "Link the current changes to the relevant bug tracker ticket by providing the ticket ID and a brief description of the changes.",
+      "context": {
+        "currentFile": true,
+        "selection": true
+      }
+    },
+    "generate-docs": {
+      "description": "Generate documentation for the current codebase.",
+      "prompt": "Generate documentation for the current codebase including function descriptions, parameter types, and return types.",
+      "context": {
+        "currentDir": true,
+        "codebase": true
+      }
+    },
+    "code-cleanup": {
+      "description": "Suggest code cleanup actions.",
+      "prompt": "Suggest potential code cleanup actions such as removing unused variables, optimizing imports, or formatting adjustments.",
+      "context": {
+        "currentFile": true,
+        "selection": true
+      }
+    },
+    "dependency-check": {
+      "description": "Check for outdated dependencies.",
+      "prompt": "Check for outdated dependencies in the project and suggest updates if available.",
+      "context": {
+        "currentDir": true,
+        "command": "npm outdated"
+      }
+    },
+    "security-vulnerability-scan": {
+      "description": "Scan the codebase for security vulnerabilities.",
+      "prompt": "Scan the current codebase for potential security vulnerabilities and suggest mitigation steps if any are found.",
+      "context": {
+        "codebase": true,
+        "command": "npm audit"
+      }
+    },
+    "performance-profile": {
+      "description": "Generate a performance profile for the current code.",
+      "prompt": "Generate a performance profile for the current code, highlighting any potential bottlenecks or areas for optimization.",
+      "context": {
+        "currentFile": true,
+        "selection": true
+      }
+    },
+    "test-coverage-report": {
+      "description": "Generate a test coverage report.",
+      "prompt": "Generate a test coverage report for the current codebase, highlighting areas with low test coverage.",
+      "context": {
+        "currentDir": true,
+        "command": "npm run test -- --coverage"
+      }
+    },
+    "code-complexity-analysis": {
+      "description": "Analyze the complexity of the current code.",
+      "prompt": "Analyze the complexity of the current code, providing metrics on cyclomatic complexity, maintainability, and other relevant factors.",
+      "context": {
+        "currentFile": true,
+        "codebase": true
+      }
+    },
+    "branch-merge-conflict-check": {
+      "description": "Check for potential merge conflicts.",
+      "prompt": "Check for potential merge conflicts between the current branch and the target branch.",
+      "context": {
+        "command": "git merge --no-commit --no-ff TARGET_BRANCH"
+      }
+    }
+  }
+}

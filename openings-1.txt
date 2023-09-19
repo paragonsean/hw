@@ -1,0 +1,14 @@
+13
+0              manager        production     3              VA             yes            10             
+1              analyst        purchasing     2              PA             yes            5              
+2              assistant      marketing      1              VA             no             2              
+3              administrator  accounting     2              FL             yes            7              
+4              lawyer         HR             2              NY             yes            3              
+5              developer      R_D            1              CA             yes            1              
+6              receptionist   marketing      1              VA             no             1              
+7              clerk          accounting     1              PA             no             1              
+8              buyer          purchasing     2              FL             no             2              
+9              worker         production     1              NY             yes            5              
+10             clerk          production     1              CA             no             1              
+11             coordinator    HR             3              VA             no             1              
+12             driver         production     1              VA             yes            8              
