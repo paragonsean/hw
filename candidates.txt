@@ -1,4 +1,4 @@
-21
+22
 John           Taylor         developer      65000          4.5            7573938284     
 William        Smith          engineer       75000          3.9            7203020381     
 Mary           Baker          engineer       76000          4.1            5838348363     
@@ -20,3 +20,4 @@ Alee           Matz           assistant      60000          2.6            75732
 Jason          Freedman       assistant      65000          3.4            4343243234     
 Alex           Tsi            chief          90000          1.1            7571111111     
 Marylin        Scott          manager        85000          4.1            7578995090     
+jogn           baker          mine           10000          2              4442424        

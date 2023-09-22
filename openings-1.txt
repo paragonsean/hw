@@ -1,4 +1,4 @@
-13
+14
 0              manager        production     3              VA             yes            10             
 1              analyst        purchasing     2              PA             yes            5              
 2              assistant      marketing      1              VA             no             2              
@@ -12,3 +12,4 @@
 10             clerk          production     1              CA             no             1              
 11             coordinator    HR             3              VA             no             1              
 12             driver         production     1              VA             yes            8              
+               manager        program        3              va             bo             2              
